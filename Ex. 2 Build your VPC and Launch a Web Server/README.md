@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Ramitha Chowdary S
+* **Register Number**: 212224240130
+* **Date of Submission**: 26-02-2026
 
 ---
 
@@ -85,13 +85,15 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+**1.** First, I logged into the AWS Management Console and created a new VPC using the VPC wizard with a CIDR block of 10.0.0.0/16. This automatically created public and private subnets, route tables, and an Internet Gateway.<br>
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+**2.** Next, I verified the subnets and ensured that the public subnet had internet access through the Internet Gateway and proper routing configuration.<br>
+
+**3.** After that, I created a security group to allow HTTP traffic so that the web server could be accessed from the internet.<br>
+
+**4.** Then, I launched an EC2 instance using Amazon Linux, placed it inside the public subnet, and attached the created security group.<br>
+
+**5.** Finally, I configured the instance to run an Apache web server using user data and verified the deployment by accessing the web page through the instance’s public IP address in a browser.<br>
 
 ---
 
