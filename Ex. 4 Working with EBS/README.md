@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Ramitha chowdary S 
+* **Register Number**: 212224240130
+* **Date of Submission**: 09-03-2026
 
 ---
 
@@ -78,13 +78,19 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+**1.** First, the AWS lab was started and the EC2 console was opened. The existing EC2 instance named Lab and its Availability Zone were checked.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+**2.** A new EBS volume of size 1 GiB with type General Purpose SSD (gp2) was created in the same Availability Zone and named My Volume.
+
+**3.** The created volume was then attached to the EC2 instance using the device name /dev/sdf.
+
+**4.** The EC2 instance was opened using EC2 Instance Connect, and a file system was created on the new volume using Linux commands.
+
+**5.** The volume was mounted to a directory (/mnt/data-store) and a sample file was created to store some text.
+
+**6.** A snapshot of the volume was created as a backup.
+
+**7.** A new volume was then created from the snapshot, attached to the EC2 instance, and mounted to verify that the previously created file was successfully restored.
 
 ---
 
